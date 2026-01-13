@@ -10,7 +10,7 @@ import History from "./pages/History";
 
 import ProtectedRoute from "./components/ProtectedRoute";
 
-const API_URL = "https://task-planner-tw-1.onrender.com";
+const API_URL = "http://localhost:7000";
 
 // Definește rutele și protejează accesul în funcție de rol
 export default function App() {

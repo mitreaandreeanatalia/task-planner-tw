@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import AppLayout from "../components/AppLayout";
 
-const API_URL = "https://task-planner-tw-1.onrender.com";
+const API_URL = "http://localhost:7000";
 
 // Ia token-ul JWT din localStorage pentru request-uri
 function getToken() {

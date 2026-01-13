@@ -31,9 +31,12 @@ app.use("/api", userService);
 app.use("/api", taskService);
 
 // Pornește serverul și verifică conexiunea la baza de date
-const PORT = process.env.PORT || 7000;
-app.listen(PORT, async () => {
-  console.log("Server started on https://task-planner-tw-1.onrender.com");
+app.get("/", (req, res) => {
+  res.json({ message: "Task Planner API is running. Try /health" });
+});
+
+app.listen(7000, async () => {
+  console.log("Server started on http://localhost:7000");
   try {
     await sequelize.authenticate();
     console.log("DB connected");
